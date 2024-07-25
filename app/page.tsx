@@ -1,21 +1,29 @@
-import Link from 'next/link';
+import React from 'react';
+import { homepageText, homepage, bonap, createdBy } from './content';
+import './styles.css'
+import './font.css'
+
+function Navbar() {
+  return (
+    <nav className='navbar'>
+      <ul className='navbar-list'>
+        <li><a href='/'>My Recipes</a></li>
+        <li><a href='/recipes'>Recettes</a></li>
+        <li><a href='/about'>About</a></li>
+      </ul>
+    </nav>
+  );
+}
 
 export default function Home() {
   return (
-    <div className='container'>
-      <h1>Bienvenue dans My Recipes</h1>
-      <p>Page d'accueil.</p>
-      <nav>
-      <Link href="/recipes">Recettes </Link>
-      <Link href="/about">About</Link>
-      </nav>
-      <footer className='footer'>
-      <p>Crée par
-        <a href="https://github.com/SoukainaHassani"
-        target="_blank" rel="noopener noreferrer"> Soukaina
-        </a>
-        </p>
-      </footer>
+    <div>
+      <Navbar />
+      <h1 className='large-title'>My Recipes</h1>
+      <div className='text-homepage'>{homepageText}</div>
+      <div className='hometext'>{homepage}</div>
+      <div className='created-by' dangerouslySetInnerHTML={{__html: createdBy }} />
+      <div className='bye'>{bonap}</div>
     </div>
   );
 }

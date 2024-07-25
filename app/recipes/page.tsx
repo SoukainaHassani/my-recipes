@@ -1,9 +1,11 @@
+import React from 'react';
 import Link from 'next/link';
+import '../recettes.css'
 
 export default function Recipes() {
   return (
     <div>
-      <h1>Pâtisseries</h1>
+      <h1 className='title-recettes'>Qu'est-ce qu'on mange?</h1>
       <Link href="/one">Chocolate Brownie </Link>
       <Link href="/two">Chocolate Cake </Link>
       <Link href="/">Page d'accueil</Link>

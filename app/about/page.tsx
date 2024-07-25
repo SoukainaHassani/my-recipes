@@ -1,19 +1,16 @@
 import Link from 'next/link';
+import '../styles.css'
+import { aboutText } from '../content';
+import Navbar from '../page'
 
 export default function About() {
   return (
     <div>
-      <h1>About My Recipes</h1>
-      <p>Dans ce site, je vais vous partager mes recettes et pâtisseries préférées.</p>
-      <Link href="/">Page d'accueil</Link>
-      <footer className='footer'> 
-        <p>Crée par
-        <a href="https://github.com/SoukainaHassani"
-        target="_blank" rel="noopener noreferrer"> Soukaina
-        </a>
-        </p>
-      </footer>
+      <h1 className='about-recipes'>À propos de My Recipes</h1>
+      <div className='about-text' dangerouslySetInnerHTML={{__html: aboutText}} />
+      <Link href="/" className='go-homepage'>
+      Page d'accueil
+      </Link>
     </div>
   );
 }
- // ajouter mon nom + image gateau idealement et recette dans une autre page
