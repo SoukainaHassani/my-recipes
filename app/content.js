@@ -8,8 +8,8 @@ export const homepage = `
 
 export const createdBy = `
   <p>
-    Voici mon <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub</a>
-    et mon <a href="https://www.linkedin.com/in/username-99b5b62b2" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+    Voici mon <a href="https://github.com/SoukainaHassani" target="_blank" rel="noopener noreferrer">GitHub</a>
+    et mon <a href="https://www.linkedin.com/in/soukaïna-hassani-99b5b62b2" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
   </p>
 `;
 
