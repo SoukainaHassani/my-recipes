@@ -7,24 +7,30 @@ import '../recettes.css'
 function ImageGallery() {
   return (
     <div className="image-gallery">
-      <Image
-        src="/patisseries.png"
-        alt="Pâtisseries"
-        width={400}
-        height={300}
-      />
+      <Link href='/patisseries'>
+        <Image
+          src="/patisseries.png"
+          alt="Pâtisseries"
+          width={400}
+          height={300}
+        />
+      </Link>
+      <Link href='/plats'>
       <Image
         src="/plats.png"
         alt="Plats"
         width={400}
         height={300}
       />
+      </Link>
+      <Link href='/fastfood'>
       <Image
         src="/fastfood.png"
         alt="Fast-food"
         width={400}
         height={300}
       />
+      </Link>
     </div>
   );
 }
