@@ -19,7 +19,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
   height: 100vh;
   display: flex;
   flex-direction: column; /* Change to column to allow top to bottom flow */
@@ -60,33 +60,69 @@ a:hover {
   color:#333;
 }
 
+/* NAVIGATION BAR */
+
 .navbar {
-  width: 100%;
-  background-color: #ffffff;
+  background-color: #fffcfc;
+  padding: 10px;
 }
 
 .navbar-list {
-  color: #ffffff;
-  background-color: #ffffff;
   list-style-type: none;
-  padding: 0;
   margin: 0;
-  display: inline-flex;
-  justify-content: space-around;
+  padding: 0;
+  display: flex;
 }
 
 .navbar-list li {
-  display: inline;
+  margin-right: 20px;
+  position: relative; /* Required for dropdown positioning */
 }
 
 .navbar-list a {
-  color: #4b3519;
+  color: rgb(38, 97, 165);
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 10px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.navbar-list a:hover {
+  background-color: #c5c0c0;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #d4d4d4;
+  display: none;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
-.marginedImage {
-  margin-top: 20px;
-  margin-left: 30px;
+@media (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-list li {
+    width: 100%;
+  }
 }
