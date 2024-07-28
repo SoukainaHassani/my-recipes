@@ -1,10 +1,11 @@
 import React from "react";
 import Tooltip from "../../Tooltip"
+import '../../styles.css'
 
 export default function Pat() {
     return (
       <div>
-        <div className="ingredients">
+        <div className="recipes">
             <p>Ingrédients:</p>
             <p>200g de chocolat</p>
             <p>125g de farine</p>
@@ -37,7 +38,18 @@ export default function Pat() {
                 text=""
                 tooltipText="Mélanger trop rapidement fait retomber les blancs et empêche une texture aérée."
               />
-            </p>
+            </p><br></br>
+            <p>Note:</p>
+            <p>Un gâteau que je fais depuis plus de 8 ans maintenant!</p>
+            <p>Si vous aimez les gâteaux à la texture "éponge", rajoutez un peu plus de farine.
+            Sinon, faites comme moi et diminuez la quantité de farine. Cette dernière joue un rôle dans la texture du gâteau.
+            Même chose pour la cuisson, plus il reste au four, plus la texture sera épongeuse, et étant donné que je déteste ça,</p>
+            <p>je fais tout mon possible pour le retirer le plus rapidement possible, tout en vérifiant bien sûr que l'intérieur est cuit.</p>
+            <br></br>
+            <p>La recette originelle propose 250 grammes de sucre, c'est, à mon avis, beaucoup trop. Je vous conseille donc de réduire la quantité de sucre! C'est toujours mieux.</p>
+            <br></br><br></br>
+            <li><a href='/patisseries'>Retour</a></li>
+            <br></br><br></br>
         </div>
       </div>
     );
